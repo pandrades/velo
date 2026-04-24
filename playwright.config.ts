@@ -76,4 +76,9 @@ export default defineConfig({
   //   url: 'http://localhost:3000',
   //   reuseExistingServer: !process.env.CI,
   // },
+  webServer: {
+    command: 'yarn dev',
+    port: 5173,
+    reuseExistingServer: !process.env.CI,
+   },
 });

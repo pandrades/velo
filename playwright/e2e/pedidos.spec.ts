@@ -5,9 +5,7 @@ test('deve consultar um pedido aprovado', async ({ page }) => {
 
   // Checkpoint
   await expect(page.getByTestId('hero-section').getByRole('heading')).toContainText('Velô Sprint');
-
-  // Acessa a página de consulta de pedidos
-  // a[href="/lookup"]
+  
   await page.getByRole('link', { name: 'Consultar Pedido' }).click();
 
   // Checkpoint
@@ -16,6 +14,7 @@ test('deve consultar um pedido aprovado', async ({ page }) => {
   await page.getByTestId('search-order-id').fill('VLO-9C6DL3');
 
   await page.getByTestId('search-order-button').click();
+
   await expect(page.getByTestId('order-result-id')).toBeVisible();
   await expect(page.getByTestId('order-result-id')).toContainText('VLO-9C6DL3');
   

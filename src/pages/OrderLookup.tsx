@@ -87,7 +87,6 @@ const OrderLookup = () => {
                 <Input
                   type="text"
                   name="order-id"
-                  placeholder="Ex: VLO-ABC123"
                   value={orderId}
                   onChange={(e) => setOrderId(e.target.value)}
                   className="mt-1"

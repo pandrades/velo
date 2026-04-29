@@ -11,7 +11,7 @@ test('deve consultar um pedido aprovado', async ({ page }) => {
   await expect(page.getByRole('heading')).toContainText('Consultar Pedido')
 
   // Act
-  await page.locator('input[name="order-id"]').fill('VLO-9C6DL3')
+  await page.locator('//label[text()="Número do Pedido"]/..//imput').fill('VLO-9C6DL3')
   //await page.getByRole('textbox', { name: 'Número do Pedido' }).fill('VLO-9C6DL3')
 
   await page.getByTestId('search-order-button').click()

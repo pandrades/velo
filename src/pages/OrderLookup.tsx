@@ -61,7 +61,7 @@ const OrderLookup = () => {
 
       setTimeout(() => {
         setSearchedOrder(order);
-      }, 7000);
+      }, 15000);
       
     } else {
       setNotFound(true);

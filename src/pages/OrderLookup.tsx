@@ -58,11 +58,7 @@ const OrderLookup = () => {
     }
     
     if (order) {
-
-      setTimeout(() => {
         setSearchedOrder(order);
-      }, 15000);
-      
     } else {
       setNotFound(true);
     }
@@ -99,7 +95,6 @@ const OrderLookup = () => {
               </div>
               <Button
                 type="submit"
-                data-testid="search-order-button"
                 className="w-full"
                 disabled={!orderId.trim() || isLoading}
               >
@@ -143,7 +138,7 @@ const OrderLookup = () => {
                   <Package className="w-5 h-5 text-muted-foreground" />
                   <div>
                     <p className="text-sm text-muted-foreground">Pedido</p>
-                    <p className="font-mono font-medium" data-testid="order-result-id">
+                     <p className="font-mono font-medium" data-testid="order-result-id">
                       {searchedOrder.id}
                     </p>
                   </div>

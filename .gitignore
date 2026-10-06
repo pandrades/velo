@@ -29,9 +29,3 @@ dist-ssr
 /blob-report/
 /playwright/.cache/
 /playwright/.auth/
-
-# CMA Playwright standalone project secrets
-/C-TEMP-CURSOR/.env
-/C-TEMP-CURSOR/node_modules/
-/C-TEMP-CURSOR/test-results/
-/C-TEMP-CURSOR/playwright-report/

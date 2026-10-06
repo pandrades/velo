@@ -18,7 +18,7 @@ export default defineConfig({
   use: {
     baseURL:
       process.env.CMA_LOGIN_URL ??
-      'https://ctdevwebfrontend.cma.com.br/CMA/TROM/TRADING-BRASIL/login/?ReturnUrl=%2FCMA%2FTROM%2FTRADING-BRASIL',
+      'https://ctdevwebfrontend.cma.com.br/CMA/TROM/TRADING-BRASIL',
     trace: 'on-first-retry',
     screenshot: 'only-on-failure',
     video: 'retain-on-failure',

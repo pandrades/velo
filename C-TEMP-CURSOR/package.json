@@ -9,7 +9,7 @@
     "test:ui": "playwright test --ui",
     "test:debug": "playwright test --debug",
     "report": "playwright show-report",
-    "codegen": "playwright codegen https://ctdevwebfrontend.cma.com.br/CMA/TROM/TRADING-BRASIL/login/?ReturnUrl=%2FCMA%2FTROM%2FTRADING-BRASIL"
+    "codegen": "playwright codegen https://ctdevwebfrontend.cma.com.br/CMA/TROM/TRADING-BRASIL"
   },
   "devDependencies": {
     "@playwright/test": "^1.55.0",

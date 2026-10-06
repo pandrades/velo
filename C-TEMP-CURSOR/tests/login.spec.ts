@@ -2,7 +2,7 @@ import { test, expect, type Page, type Locator } from '@playwright/test';
 
 const LOGIN_URL =
   process.env.CMA_LOGIN_URL ??
-  'https://ctdevwebfrontend.cma.com.br/CMA/TROM/TRADING-BRASIL/login/?ReturnUrl=%2FCMA%2FTROM%2FTRADING-BRASIL';
+  'https://ctdevwebfrontend.cma.com.br/CMA/TROM/TRADING-BRASIL';
 const USER = process.env.CMA_USER ?? '';
 const PASSWORD = process.env.CMA_PASSWORD ?? '';
 

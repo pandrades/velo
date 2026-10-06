@@ -2,7 +2,7 @@
 
 Projeto Playwright padrão para testar o login em:
 
-https://ctdevwebfrontend.cma.com.br/CMA/TROM/TRADING-BRASIL/login/
+https://ctdevwebfrontend.cma.com.br/CMA/TROM/TRADING-BRASIL
 
 No Windows, copie esta pasta para `C:\TEMP\CURSOR`.
 
@@ -14,6 +14,8 @@ C-TEMP-CURSOR/
   package.json
   tsconfig.json
   .env.example
+  run-login.bat
+  run-codegen.bat
   tests/
     example.spec.ts
     login.spec.ts
@@ -36,6 +38,12 @@ Edite `.env` com usuário e senha. Não commite o arquivo `.env`.
 
 ```bat
 cd C:\TEMP\CURSOR
+run-login.bat
+```
+
+Ou:
+
+```bat
 npm test
 npm run test:headed
 npm run test:ui
@@ -44,7 +52,7 @@ npm run test:ui
 ## Codegen (gravar seletores reais)
 
 ```bat
-npm run codegen
+run-codegen.bat
 ```
 
 Use o codegen se o login usar labels ou campos diferentes dos previstos em `tests/login.spec.ts`.
